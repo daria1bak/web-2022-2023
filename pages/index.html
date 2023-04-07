@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Escape</title>
+  <link href="/static/css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header class="panel">
+    <div class="panel__menu menu">
+      <span class="menu__logo">Escape.</span>
+      <nav class="menu__navigation navigation">
+        <a href="#" class="navigation__item">HOME</a>
+        <a href="#" class="navigation__item">CATEGORIES</a>
+        <a href="#" class="navigation__item">ABOUT</a>
+        <a href="#" class="navigation__item">CONTACT</a>
+      </nav>
+    </div>
+    <h1 class="content-title">Let's do it together.</h1>
+    <p class="content-text">We travel the world in search of stories. Come along for the ride.</p>
+    <button class="content-button">View Latest Posts</button>
+  </header>
+  <nav class="submenu">
+    <a href="#" class="submenu__link">Nature</a>
+    <a href="#" class="submenu__link">Photography</a>
+    <a href="#" class="submenu__link">Relaxation</a>
+    <a href="#" class="submenu__link">Vacation</a>
+    <a href="#" class="submenu__link">Travel</a>
+    <a href="#" class="submenu__link">Adventure</a>
+  </nav>
+  <div class="main">
+    <h2 class="title-group">Featured Posts</h2>
+    <section class="featured">
+      {{ range .FeaturedPosts }}
+      <article class="{{ .ImgModifier }}">
+        <h3 class="recommended__title">{{ .Title }}</h3>
+        <p class="recommended__text">{{ .Subtitle }}</p>
+        <div class="caption">
+          <img class="caption__image" src="{{ .AuthorImg }}">
+          <span class="caption__name caption__name_color_white">{{ .Author }}</span>
+          <span class="caption__date caption__date_color_white">{{ .PublishDate }}</span>
+        </div>
+      </article>
+      {{ end }}
+    </section>
+
+    <h2 class="title-group">Most Recent</h2>
+    <section class="lately">
+      {{ range .MostRecentPosts }}
+      <article class="recent">
+        <img class="recent__image" src="{{ .Image }}">
+        <h3 class="recent__title">{{ .Title }}</h3>
+        <p class="recent__text">{{ .Subtitle }}</p>
+        <div class="caption caption_background_white">
+          <img class="caption__image" src="{{ .AuthorImg }}">
+          <span class="caption__name">{{ .Author }}</span>
+          <span class="caption__date">{{ .PublishDate }}</span>
+        </div>
+      </article>
+      {{ end }}
+    </section>
+  </div>
+
+  <footer class="footer">
+    <span class="title-group title-group_font-white">Stay in Touch</span>
+    <form class="contact-form" action="#">
+      <input class="contact-form__email" type="email" name="email" placeholder="Enter your email adress">
+      <input class="contact-form__button" type="submit" value="Submit">
+    </form>
+
+    <div class="footer__menu menu menu_with-background">
+      <span class="menu__logo">Escape.</span>
+      <nav class="menu__navigation navigation">
+        <a href="#" class="navigation__item">HOME</a>
+        <a href="#" class="navigation__item">CATEGORIES</a>
+        <a href="#" class="navigation__item">ABOUT</a>
+        <a href="#" class="navigation__item">CONTACT</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+</html>

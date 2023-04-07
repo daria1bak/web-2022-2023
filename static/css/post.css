@@ -1,0 +1,156 @@
+.panel {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px 0 0 0;
+    align-items: center;
+    padding: 1px 0;
+    width: 100%;
+    background: none;
+    color: #2E2E2E;
+}
+
+.navigation__item 
+{
+    font: 400 11px/1.82 "Oxygen";
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px 20px;
+}
+
+.panel__logo {
+    font: 400 26px "Lora";
+}
+
+
+.navigation__item_color_black {
+    color: #2E2E2E;
+}
+
+.blog {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 135px;
+}
+
+.blog__title {
+    font: 400 50px/1.02 "Lora";
+    text-align: center;
+    letter-spacing: 2px;
+    color: #2E2E2E;
+    margin: 120px 0 0 0;
+}
+
+.blog__description {
+    font: 400 17px/1.18 "Oxygen";
+    text-align: center;
+    color: #2E2E2E;
+    border-radius: 3px;
+    margin: 20px 0 110px 0;
+}
+
+.blog__image {
+    margin: 0 0 140px;
+    width: 100%;
+}
+
+.blog__text {
+    font: 400 24px/1.46 "Oxygen";
+    margin-left: 17.36%;
+    margin-right: 17.36%;
+    white-space: pre-line;
+}
+
+.footer
+{
+    background: #4D565D url(../img/big_footer.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.panel_with-background {
+    background: rgba(35, 47, 56, 0.6);
+    height: 89px;
+    width: 100%;
+}
+
+.footer__panel {
+    color: #FFFFFF;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px 0 0 0;
+    align-items: center;
+    padding: 1px 0;
+    width: 100%;
+}
+
+.contact-form
+{
+    display: flex;
+    align-self: center;
+    margin: 0 0 90px 0;
+}
+
+.contact-form__email
+{
+    font: 400 12px/1.17 'Roboto';
+    color: #817F83;
+    width: 375px;
+    height: 50px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    padding: 0 0 0 35px;
+}
+
+.contact-form__button
+{
+    font: 400 12px/1.17 'Roboto';
+    color: #f8f8f8;
+    width: 125px;
+    height: 50px;
+    background: rgba(255, 255, 255, .28);
+    border: none;
+    border-radius: 0 3px 3px 0;
+}
+
+body {
+    margin: 0;
+}
+
+.title-group {
+    font: 400 20px/1.35 "Oxygen";
+    text-align: center;
+    letter-spacing: 2px;
+    color: #2E2E2E;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin: 22px;
+}
+
+.title-group::after {
+    width: 188px;
+    height: 1px;
+    background: #DEDEDE;
+    content: "";
+    display: block;
+    margin: 16px 0 0;
+}
+
+.title-group_white
+{
+    color: #EFEFEF;
+    margin: 82px 0 20px;
+}
+

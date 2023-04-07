@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Escape.The Road Ahead</title>
+  <link href="../static/css/post.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="panel">
+      <span class="panel__logo">Escape.</span>
+      <nav class="panel__navigation navigation">
+        <a class="navigation__item navigation__item_color_black" href="#">HOME</a>
+        <a class="navigation__item navigation__item_color_black" href="#">CATEGORIES</a>
+        <a class="navigation__item navigation__item_color_black" href="#">ABOUT</a>
+        <a class="navigation__item navigation__item_color_black" href="#">CONTACT</a>
+      </nav>
+    </header>
+    <section class="blog">
+      <h1 class="blog__title">{{ .Title }}</h1>
+      <p class="blog__description">{{ .Subtitle }}</p>
+      <img class="blog__image" src="{{ .Image }}" alt="northern lights">
+      <p class="blog__text">{{ .Text }}</p>
+  </section>
+  <footer class="footer">
+    <span class="title-group title-group_white">Stay in Touch</span>
+    <form class="contact-form" action="#">
+      <input class="contact-form__email" type="email" name="email" placeholder="Enter your email adress">
+      <input class="contact-form__button" type="submit" value="Submit">
+    </form>
+
+    <div class="footer__panel panel_with-background">
+      <span class="panel__logo">Escape.</span>
+      <nav class="panel__navigation navigation">
+        <a href="#" class="navigation__item">HOME</a>
+        <a href="#" class="navigation__item">CATEGORIES</a>
+        <a href="#" class="navigation__item">ABOUT</a>
+        <a href="#" class="navigation__item">CONTACT</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+</html>
