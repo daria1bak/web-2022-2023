@@ -121,15 +121,9 @@
 }
 
 .recommended {
-    height: 280px;
-    width: 460px;
-    box-sizing: border-box;
-    border-radius: 3px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 0 20px 20px 20px;
-    position: relative;
+    width: 560px;
+    padding-left: 20px;
+    margin-top: 20px;
 }
 
 .recommended_first {

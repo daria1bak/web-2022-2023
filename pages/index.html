@@ -38,11 +38,11 @@
     <h2 class="title-group">Featured Posts</h2>
     <section class="featured">
       {{ range .FeaturedPosts }}
-      <article class="{{ .ImgModifier }}">
+      <article class="recommended" style="background: url('{{ .ImageUrl }}') no-repeat; background-size: 100%;"`>
         <h3 class="recommended__title">{{ .Title }}</h3>
         <p class="recommended__text">{{ .Subtitle }}</p>
         <div class="caption">
-          <img class="caption__image" src="{{ .AuthorImg }}">
+          <img class="caption__image" src="{{ .AuthorUrl }}">
           <span class="caption__name caption__name_color_white">{{ .Author }}</span>
           <span class="caption__date caption__date_color_white">{{ .PublishDate }}</span>
         </div>
@@ -52,13 +52,13 @@
 
     <h2 class="title-group">Most Recent</h2>
     <section class="lately">
-      {{ range .MostRecentPosts }}
+      {{ range .RecentPosts }}
       <article class="recent">
-        <img class="recent__image" src="{{ .Image }}">
+        <img class="recent__image" src="{{ .ImageUrl }}">
         <h3 class="recent__title">{{ .Title }}</h3>
         <p class="recent__text">{{ .Subtitle }}</p>
         <div class="caption caption_background_white">
-          <img class="caption__image" src="{{ .AuthorImg }}">
+          <img class="caption__image" src="{{ .AuthorUrl }}">
           <span class="caption__name">{{ .Author }}</span>
           <span class="caption__date">{{ .PublishDate }}</span>
         </div>

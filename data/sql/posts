@@ -1,0 +1,160 @@
+INSERT INTO 
+    post (
+        title,
+        subtitle,
+        author,
+        author_url,
+        publish_date,
+        featured,
+        image_url
+    )
+VALUES (
+    'The Road Ahead',
+    'The road ahead might be paved - it might not be.',
+    'Mat Vogels',
+    '/static/img/Mat_Vogels.png',
+    'September 25, 2015',
+    1,
+    '/static/img/northern_lights_item.png'
+);
+
+INSERT INTO 
+    post (
+        title,
+        subtitle,
+        author,
+        author_url,
+        publish_date,
+        featured,
+        image_url
+    )
+VALUES (
+    'From Top Down',
+    'Once a year, go someplace you’ve never been before.',
+    'William Wong',
+    '/static/img/William_Wong.png',
+    'September 25, 2015',
+    1,
+    '/static/img/top2down_item.png'
+);
+
+INSERT INTO 
+    post (
+        title,
+        subtitle,
+        image_url,
+        author,
+        author_url,
+        publish_date,
+        featured
+    )
+VALUES (
+    'Still Standing Tall',
+    'Life begins at the end of your comfort zone.',
+    '/static/img/parachutes.png',
+    'William Wong',
+    '/static/img/William_Wong.png',
+    '09/25/2015',
+    0
+);
+
+INSERT INTO 
+    post (
+        title,
+        subtitle,
+        image_url,
+        author,
+        author_url,
+        publish_date,
+        featured
+    )
+VALUES (
+    'Sunny Side Up',
+    'No place is ever as bad as they tell you it’s going to be.',
+    '/static/img/bridge.png',
+    'Mat Vogels',
+    '/static/img/Mat_Vogels.png',
+    '09/25/2015',
+    0
+);
+
+INSERT INTO 
+    post (
+        title,
+        subtitle,
+        image_url,
+        author,
+        author_url,
+        publish_date,
+        featured
+    )
+VALUES (
+    'Water Falls',
+    'We travel not to escape life, but for life not to escape us.',
+    '/static/img/water_fall.png',
+    'Mat Vogels',
+    '/static/img/Mat_Vogels.png',
+    '09/25/2015',
+    0
+);
+
+INSERT INTO 
+    post (
+        title,
+        subtitle,
+        image_url,
+        author,
+        author_url,
+        publish_date,
+        featured
+    )
+VALUES (
+    'Through the Mist',
+    'Travel makes you see what a tiny place you occupy in the world.',
+    '/static/img/sea_breeze.png',
+    'William Wong',
+    '/static/img/William_Wong.png',
+    '09/25/2015',
+    0
+);
+
+INSERT INTO 
+    post (
+        title,
+        subtitle,
+        image_url,
+        author,
+        author_url,
+        publish_date,
+        featured
+    )
+VALUES (
+    'Awaken Early',
+    'Not all those who wander are lost.',
+    '/static/img/funicular.png',
+    'Mat Vogels',
+    '/static/img/Mat_Vogels.png',
+    '09/25/2015',
+    0
+);
+
+INSERT INTO 
+    post (
+        title,
+        subtitle,
+        image_url,
+        author,
+        author_url,
+        publish_date,
+        featured
+    )
+VALUES (
+    'Try it Always',
+    'The world is a book, and those who do not travel read only one page.',
+    '/static/img/man_and_waterfall.png',
+    'Mat Vogels',
+    '/static/img/Mat_Vogels.png',
+    '09/25/2015',
+    0
+);
+
